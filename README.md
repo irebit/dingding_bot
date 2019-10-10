@@ -44,5 +44,5 @@ func main() {
 ```
 
 效果如下：
-![示例图片](https://github.com/irebit/dingtalk_group_robot/example.jpg)
+![示例图片](https://github.com/irebit/dingtalk_group_robot/blob/master/example.jpg)
 
