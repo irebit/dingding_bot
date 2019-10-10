@@ -1,7 +1,7 @@
 # dingtalk_group_robot
 push message or notification to dingtalk group
 
-### 支持钉钉群组机器人全部消息格式
+### 支持钉钉群组机器人所有消息格式
 
 - [x] Text
 - [x] Link
@@ -43,6 +43,8 @@ func main() {
 }
 ```
 
-效果如下：
+更多调用示例见robot_test.go
+
+### 效果如下：
 ![示例图片](https://github.com/irebit/dingtalk_group_robot/blob/master/example.jpg)
 
