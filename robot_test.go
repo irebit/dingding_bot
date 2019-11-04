@@ -60,3 +60,14 @@ func TestSendFeedCard(t *testing.T) {
 	b, err := New().SetAccessToken("59cfcfec07375399df981a930fca7ce84d8a94d6c686b9518082e6c0cebff8e9").Send(message)
 	log.Println(b, err)
 }
+
+func TestSendLinkWithSign(t *testing.T) {
+	message := NewLink().SetContent(
+		"国产飞碟型武装直升机亮相", //title
+		"10月10日，第五届中国天津国际直升机博览会在天津滨海新区空港经济区中航直升机产业基地内举行。外形酷似飞碟的“超级大白鲨”武装直升机在会上对外展出。", //text
+		"https://news.ifeng.com/c/7qeji8ll3sm", //messageUrl
+		"http://x0.ifengimg.com/res/2019/C63EEBD9080A3EE7039E7233C193718181ECE61B_size109_w600_h450.jpeg", //picUrl
+	)
+	b, err := New().SetAccessToken("feb3fad6dc8575b5a0e95fb2576ac86c61d9760039a91ae44809607cf7b42172").AddSign("SEC6761eafa77c228432873c1e4006f264d40bd3adf08fdb65d784a53d11cf8174d").Send(message)
+	log.Println(b, err)
+}
