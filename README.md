@@ -22,7 +22,7 @@ go test -v -count=1 *.go
 ``` golang
 package main
 
-import robot "github.com/irebit/dingtalk_group_robot"
+import robot "github.com/irebit/dingding_bot"
 
 func main() {
 
