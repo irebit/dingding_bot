@@ -1,4 +1,4 @@
-package dingtalk_group_robot
+package dingding_bot 
 
 type MsgType string
 
